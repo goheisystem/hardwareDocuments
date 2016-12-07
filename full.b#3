@@ -1615,8 +1615,8 @@ design rules under a new name.</description>
 <element name="T2" library="transistor" package="TO92-ECB" value="2SC1815" x="30.48" y="38.1"/>
 <element name="T3" library="transistor" package="TO92-ECB" value="2SC1815" x="30.48" y="22.86"/>
 <element name="USB_B1" library="akizuki_mini_usb_dip" package="AKIZUKI_MINI_USB_DIP" value="AKIZUKI_MINI_USB_DIP" x="91.44" y="35.56" rot="R270"/>
-<element name="JP2" library="pinhead" package="1X02" value="" x="40.64" y="3.81" rot="R270"/>
-<element name="R7" library="rcl" package="0204/7" value="100k" x="40.64" y="11.43" rot="R90"/>
+<element name="JP2" library="pinhead" package="1X02" value="" x="60.96" y="3.81" rot="R270"/>
+<element name="R7" library="rcl" package="0204/7" value="10k" x="64.77" y="10.16"/>
 <element name="JP5" library="pinhead" package="1X03" value="" x="2.54" y="15.24" rot="R270"/>
 </elements>
 <signals>
@@ -1684,8 +1684,9 @@ design rules under a new name.</description>
 <wire x1="43.18" y1="20.32" x2="45.72" y2="20.32" width="0.4064" layer="16"/>
 <contactref element="JP2" pad="2"/>
 <contactref element="JP5" pad="2"/>
-<wire x1="40.64" y1="2.54" x2="43.18" y2="20.32" width="0" layer="19" extent="16-16"/>
 <wire x1="27.94" y1="15.24" x2="2.54" y2="15.24" width="0.4064" layer="16"/>
+<wire x1="60.96" y1="2.54" x2="45.72" y2="2.54" width="0.4064" layer="16"/>
+<wire x1="45.72" y1="2.54" x2="45.72" y2="20.32" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$7">
 <contactref element="T1" pad="C"/>
@@ -1751,7 +1752,17 @@ design rules under a new name.</description>
 <signal name="+5V">
 <contactref element="B1" pad="VB"/>
 <contactref element="JP5" pad="3"/>
-<wire x1="2.54" y1="12.7" x2="53.34" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="12.7" x2="10.16" y2="12.7" width="0.4064" layer="16"/>
+<via x="10.16" y="12.7" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="22.86" width="0.4064" layer="1"/>
+<via x="10.16" y="22.86" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="10.16" y1="22.86" x2="10.16" y2="60.96" width="0.4064" layer="16"/>
+<wire x1="10.16" y1="60.96" x2="22.86" y2="60.96" width="0.4064" layer="16"/>
+<via x="22.86" y="60.96" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="22.86" y1="60.96" x2="50.8" y2="60.96" width="0.4064" layer="1"/>
+<via x="50.8" y="60.96" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="50.8" y1="60.96" x2="50.8" y2="58.42" width="0.4064" layer="16"/>
+<wire x1="50.8" y1="58.42" x2="53.34" y2="58.42" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="B1" pad="RD-"/>
@@ -1826,13 +1837,19 @@ design rules under a new name.</description>
 <contactref element="B1" pad="P15"/>
 <contactref element="JP2" pad="1"/>
 <contactref element="R7" pad="1"/>
-<wire x1="40.64" y1="7.62" x2="53.34" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="40.64" y1="5.08" x2="40.64" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="27.94" x2="60.96" y2="27.94" width="0.4064" layer="16"/>
+<wire x1="60.96" y1="27.94" x2="60.96" y2="10.16" width="0.4064" layer="16"/>
+<wire x1="60.96" y1="10.16" x2="60.96" y2="5.08" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$29">
 <contactref element="B1" pad="VOUT"/>
 <contactref element="R7" pad="2"/>
-<wire x1="40.64" y1="15.24" x2="76.2" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="63.5" x2="73.66" y2="63.5" width="0.4064" layer="16"/>
+<via x="73.66" y="63.5" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="73.66" y1="63.5" x2="73.66" y2="45.72" width="0.4064" layer="1"/>
+<via x="73.66" y="45.72" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="73.66" y1="45.72" x2="73.66" y2="10.16" width="0.4064" layer="16"/>
+<wire x1="73.66" y1="10.16" x2="68.58" y2="10.16" width="0.4064" layer="16"/>
 </signal>
 <signal name="VBUS">
 <contactref element="USB_B1" pad="VBUS"/>

@@ -4196,7 +4196,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="USB_B1" library="akizuki_mini_usb_dip" deviceset="AKIZUKI_MINI_USB_DIP" device=""/>
 <part name="RJ45_DIP1" library="akizuki_rj45_dip" deviceset="AKIZUKI_RJ45_DIP" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY16" library="supply2" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4235,7 +4234,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="USB_B1" gate="G$1" x="-60.96" y="43.18" rot="R90"/>
 <instance part="RJ45_DIP1" gate="G$1" x="-58.42" y="83.82" rot="MR0"/>
 <instance part="SUPPLY15" gate="GND" x="-38.1" y="50.8" rot="R180"/>
-<instance part="SUPPLY16" gate="+5V" x="-38.1" y="35.56" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -4411,11 +4409,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SUPPLY14" gate="+5V" pin="+5V"/>
 <wire x1="15.24" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="USB_B1" gate="G$1" pin="VBUS"/>
-<pinref part="SUPPLY16" gate="+5V" pin="+5V"/>
-<wire x1="-45.72" y1="38.1" x2="-38.1" y2="38.1" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$10" class="0">
 <segment>
@@ -4469,6 +4462,15 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-25.4" y1="66.04" x2="-25.4" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="USB_B1" gate="G$1" pin="D-"/>
 <wire x1="-25.4" y1="40.64" x2="-45.72" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="USB_B1" gate="G$1" pin="VBUS"/>
+<pinref part="B1" gate="G$1" pin="VU"/>
+<wire x1="-15.24" y1="83.82" x2="-27.94" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="83.82" x2="-27.94" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="38.1" x2="-45.72" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -223,6 +223,39 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
 </package>
+<package name="1X03">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.8862" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+</package>
 </packages>
 </library>
 <library name="rcl">
@@ -1570,7 +1603,6 @@ design rules under a new name.</description>
 <element name="D1" library="diode" package="DO41-10" value="1N4004" x="17.78" y="55.88"/>
 <element name="D2" library="diode" package="DO41-10" value="1N4004" x="17.78" y="38.1"/>
 <element name="D3" library="diode" package="DO41-10" value="1N4004" x="17.78" y="22.86"/>
-<element name="JP1" library="pinhead" package="1X02" value="" x="2.54" y="16.51" rot="R270"/>
 <element name="JP3" library="pinhead" package="2X03" value="" x="3.81" y="43.18" rot="MR270"/>
 <element name="R1" library="rcl" package="0204/7" value="2.2k" x="41.91" y="58.42" rot="R180"/>
 <element name="R2" library="rcl" package="0204/7" value="100k" x="41.91" y="55.88" rot="R180"/>
@@ -1583,10 +1615,9 @@ design rules under a new name.</description>
 <element name="T2" library="transistor" package="TO92-ECB" value="2SC1815" x="30.48" y="38.1"/>
 <element name="T3" library="transistor" package="TO92-ECB" value="2SC1815" x="30.48" y="22.86"/>
 <element name="USB_B1" library="akizuki_mini_usb_dip" package="AKIZUKI_MINI_USB_DIP" value="AKIZUKI_MINI_USB_DIP" x="91.44" y="35.56" rot="R270"/>
-<element name="JP2" library="pinhead" package="1X02" value="" x="17.78" y="5.08" rot="R90"/>
-<element name="JP4" library="pinhead" package="1X02" value="" x="25.4" y="5.08" rot="R90"/>
-<element name="R7" library="rcl" package="0204/7" value="100k" x="5.08" y="-5.08"/>
-<element name="R8" library="rcl" package="0204/7" value="100k" x="5.08" y="-10.16"/>
+<element name="JP2" library="pinhead" package="1X02" value="" x="40.64" y="3.81" rot="R270"/>
+<element name="R7" library="rcl" package="0204/7" value="100k" x="40.64" y="11.43" rot="R90"/>
+<element name="JP5" library="pinhead" package="1X03" value="" x="5.08" y="-5.08"/>
 </elements>
 <signals>
 <signal name="VIN">
@@ -1634,10 +1665,8 @@ design rules under a new name.</description>
 <contactref element="T1" pad="E"/>
 <contactref element="T2" pad="E"/>
 <contactref element="T3" pad="E"/>
-<contactref element="JP1" pad="2"/>
 <contactref element="B1" pad="GND"/>
 <contactref element="USB_B1" pad="GND"/>
-<wire x1="27.94" y1="15.24" x2="2.54" y2="15.24" width="0.254" layer="16"/>
 <wire x1="53.34" y1="63.5" x2="53.34" y2="71.12" width="0.4064" layer="16"/>
 <wire x1="53.34" y1="71.12" x2="86.36" y2="71.12" width="0.4064" layer="16"/>
 <wire x1="86.36" y1="71.12" x2="86.36" y2="40.64" width="0.4064" layer="16"/>
@@ -1654,9 +1683,9 @@ design rules under a new name.</description>
 <wire x1="43.18" y1="38.1" x2="43.18" y2="20.32" width="0.4064" layer="16"/>
 <wire x1="43.18" y1="20.32" x2="45.72" y2="20.32" width="0.4064" layer="16"/>
 <contactref element="JP2" pad="2"/>
-<contactref element="JP4" pad="2"/>
-<wire x1="17.78" y1="6.35" x2="2.54" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="6.35" x2="17.78" y2="6.35" width="0" layer="19" extent="1-1"/>
+<contactref element="JP5" pad="3"/>
+<wire x1="40.64" y1="2.54" x2="43.18" y2="20.32" width="0" layer="19" extent="16-16"/>
+<wire x1="7.62" y1="-5.08" x2="27.94" y2="15.24" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$7">
 <contactref element="T1" pad="C"/>
@@ -1704,14 +1733,14 @@ design rules under a new name.</description>
 <contactref element="JP3" pad="2"/>
 <contactref element="JP3" pad="4"/>
 <contactref element="JP3" pad="6"/>
-<contactref element="JP1" pad="1"/>
 <wire x1="12.7" y1="38.1" x2="12.7" y2="55.88" width="0.254" layer="16"/>
 <wire x1="12.7" y1="38.1" x2="12.7" y2="22.86" width="0.254" layer="16"/>
 <wire x1="2.54" y1="45.72" x2="2.54" y2="43.18" width="0.4064" layer="16"/>
 <wire x1="2.54" y1="43.18" x2="2.54" y2="40.64" width="0.4064" layer="16"/>
-<wire x1="2.54" y1="43.18" x2="2.54" y2="17.78" width="0.4064" layer="16"/>
 <wire x1="12.7" y1="22.86" x2="12.7" y2="17.78" width="0.4064" layer="16"/>
-<wire x1="12.7" y1="17.78" x2="2.54" y2="17.78" width="0.4064" layer="16"/>
+<contactref element="JP5" pad="1"/>
+<wire x1="12.7" y1="38.1" x2="2.54" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-5.08" x2="12.7" y2="17.78" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$4">
 <contactref element="R3" pad="1"/>
@@ -1721,6 +1750,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="+5V">
 <contactref element="B1" pad="VB"/>
+<contactref element="JP5" pad="2"/>
+<wire x1="5.08" y1="-5.08" x2="53.34" y2="58.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="B1" pad="RD-"/>
@@ -1806,22 +1837,13 @@ design rules under a new name.</description>
 <contactref element="B1" pad="P15"/>
 <contactref element="JP2" pad="1"/>
 <contactref element="R7" pad="1"/>
-<wire x1="17.78" y1="3.81" x2="53.34" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="1.27" y1="-5.08" x2="17.78" y2="3.81" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$28">
-<contactref element="B1" pad="P16"/>
-<contactref element="JP4" pad="1"/>
-<contactref element="R8" pad="1"/>
-<wire x1="25.4" y1="3.81" x2="53.34" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="1.27" y1="-10.16" x2="25.4" y2="3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="7.62" x2="53.34" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="5.08" x2="40.64" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
 <contactref element="B1" pad="VOUT"/>
 <contactref element="R7" pad="2"/>
-<contactref element="R8" pad="2"/>
-<wire x1="8.89" y1="-5.08" x2="76.2" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="-10.16" x2="8.89" y2="-5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="15.24" x2="76.2" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
